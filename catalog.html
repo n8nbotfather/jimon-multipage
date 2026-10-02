@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог — JIMON GROUP</title>
+  <meta name="description" content="Каталог">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="river-flow" aria-hidden="true"><div class="river-track"></div></div>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">金木</span>
+        <span class="logo-text">JIMON GROUP</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html" class="active">Каталог</a></li>
+        <li><a href="advantages.html">Комплексы</a></li>
+        <li><a href="about.html">О компании</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+        <li><a href="#" class="btn-nav" onclick="openOrderModal();return false;">Заказать</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <div class="page-top">
+    <div class="container"><nav class="breadcrumbs"><a href="index.html">Главная</a><span class="crumb-sep">›</span><span class="crumb-current">Каталог</span></nav></div>
+    <div class="container">
+      <div class="catalog-head">
+        <span class="catalog-label">КАТАЛОГ · 32 ПРОДУКТОВ</span>
+        <h1 class="catalog-title">Все продукты JIMON GROUP</h1>
+      </div>
+      <div class="filters"><button class="filter-btn active" data-filter="all">Все</button>
+<button class="filter-btn" data-filter="joints">Суставы</button>
+<button class="filter-btn" data-filter="liver">Печень · Детокс</button>
+<button class="filter-btn" data-filter="heart">Сердце · Сосуды</button>
+<button class="filter-btn" data-filter="beauty">Красота</button>
+<button class="filter-btn" data-filter="immunity">Иммунитет</button>
+<button class="filter-btn" data-filter="energy">Энергия</button>
+<button class="filter-btn" data-filter="brain">Мозг · Сон</button>
+<button class="filter-btn" data-filter="breath">Дыхание</button></div>
+    </div>
+  </div>
+  <section class="catalog" style="padding-top:12px">
+    <div class="container"><div class="products-grid" id="products-grid">
+        <article class="product-card" data-category="liver">
+          <div class="product-image"><img src="images/products/complex-v.jpg" alt="5-ЭТАПНЫЙ КОМПЛЕКС ОЧИЩЕНИЯ «В»" loading="lazy"><div class="product-badge">Детокс</div></div>
+          <div class="product-info">
+            <h3 class="product-title">5-ЭТАПНЫЙ КОМПЛЕКС ОЧИЩЕНИЯ «В»</h3>
+            <p class="product-desc">Полный цикл здоровья для женщин.</p>
+            <div class="product-meta"><span class="product-series">29 900 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('complex-v')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('5-ЭТАПНЫЙ КОМПЛЕКС ОЧИЩЕНИЯ «В»')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="liver">
+          <div class="product-image"><img src="images/products/complex-a.jpg" alt="5-ЭТАПНЫЙ КОМПЛЕКС ОЧИЩЕНИЯ «А»" loading="lazy"><div class="product-badge">Детокс</div></div>
+          <div class="product-info">
+            <h3 class="product-title">5-ЭТАПНЫЙ КОМПЛЕКС ОЧИЩЕНИЯ «А»</h3>
+            <p class="product-desc">Полный цикл очищения.</p>
+            <div class="product-meta"><span class="product-series">28 700 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('complex-a')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('5-ЭТАПНЫЙ КОМПЛЕКС ОЧИЩЕНИЯ «А»')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="joints">
+          <div class="product-image"><img src="images/products/ke-le-sho.jpg" alt="Кэ Лэ Шо — крем-бальзам" loading="lazy"><div class="product-badge">Суставы</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Кэ Лэ Шо — крем-бальзам</h3>
+            <p class="product-desc">Травяной крем-бальзам. 15 компонентов.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('ke-le-sho')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Кэ Лэ Шо — крем-бальзам')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="liver">
+          <div class="product-image"><img src="images/products/liver-peptide.jpg" alt="Напиток с пептидами печени и куркумой" loading="lazy"><div class="product-badge">Печень</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Напиток с пептидами печени и куркумой</h3>
+            <p class="product-desc">Поддержка печени. Пептиды, куркума, шиповник.</p>
+            <div class="product-meta"><span class="product-series">9 300 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('liver-peptide')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Напиток с пептидами печени и куркумой')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="immunity">
+          <div class="product-image"><img src="images/products/cicory.jpg" alt="Конфеты из цикория «Цзиньму»" loading="lazy"><div class="product-badge">Иммунитет</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Конфеты из цикория «Цзиньму»</h3>
+            <p class="product-desc">Король иммунитета. Пре- и пробиотики.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('cicory')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Конфеты из цикория «Цзиньму»')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="immunity">
+          <div class="product-image"><img src="images/products/baocin.jpg" alt="Пептиды костного мозга КРС «Баоцин»" loading="lazy"><div class="product-badge">Иммунитет</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Пептиды костного мозга КРС «Баоцин»</h3>
+            <p class="product-desc">Пептидный комплекс для иммунитета.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('baocin')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Пептиды костного мозга КРС «Баоцин»')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="immunity">
+          <div class="product-image"><img src="images/products/luo-han-guo.jpg" alt="Напиток Луо Хан Гоу" loading="lazy"><div class="product-badge">ЖКТ</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Напиток Луо Хан Гоу</h3>
+            <p class="product-desc">Растительный напиток для желудка.</p>
+            <div class="product-meta"><span class="product-series">9 300 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('luo-han-guo')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Напиток Луо Хан Гоу')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="breath">
+          <div class="product-image"><img src="images/products/tim-ranchi.jpg" alt="Травяной напиток «Тим Ранчи»" loading="lazy"><div class="product-badge">Дыхание</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Травяной напиток «Тим Ранчи»</h3>
+            <p class="product-desc">98,3% дигидрокверцетина. 13 компонентов.</p>
+            <div class="product-meta"><span class="product-series">9 300 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('tim-ranchi')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Травяной напиток «Тим Ранчи»')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="heart">
+          <div class="product-image"><img src="images/products/xue-lan-duo.jpg" alt="Xue Lan Duo" loading="lazy"><div class="product-badge">Сердце</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Xue Lan Duo</h3>
+            <p class="product-desc">Натто и листья шелковицы.</p>
+            <div class="product-meta"><span class="product-series">7 700 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('xue-lan-duo')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Xue Lan Duo')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="energy">
+          <div class="product-image"><img src="images/products/mayou.jpg" alt="Почечный MAYOU" loading="lazy"><div class="product-badge">Энергия</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Почечный MAYOU</h3>
+            <p class="product-desc">Женьшень и хуанцзин для почек.</p>
+            <div class="product-meta"><span class="product-series">6 800 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('mayou')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Почечный MAYOU')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="brain">
+          <div class="product-image"><img src="images/products/yuanbao.jpg" alt="Мозговой Yuanbao Fengzi You" loading="lazy"><div class="product-badge">Мозг</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Мозговой Yuanbao Fengzi You</h3>
+            <p class="product-desc">Комплекс масел для мозга.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('yuanbao')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Мозговой Yuanbao Fengzi You')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="beauty">
+          <div class="product-image"><img src="images/products/sulancho.jpg" alt="Суланьцао — спрей для лица" loading="lazy"><div class="product-badge">Красота</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Суланьцао — спрей для лица</h3>
+            <p class="product-desc">Спрей. Заменяет 6 этапов ухода.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('sulancho')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Суланьцао — спрей для лица')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="energy">
+          <div class="product-image"><img src="images/products/xian-yun-you.jpg" alt="Xian Yun You" loading="lazy"><div class="product-badge">Вес</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Xian Yun You</h3>
+            <p class="product-desc">Контроль веса и аппетита.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('xian-yun-you')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Xian Yun You')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="liver">
+          <div class="product-image"><img src="images/products/birun-kang.jpg" alt="Бирун Канг — лимфодренаж" loading="lazy"><div class="product-badge">Печень</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Бирун Канг — лимфодренаж</h3>
+            <p class="product-desc">Лимфодренаж, вес, отёки.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('birun-kang')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Бирун Канг — лимфодренаж')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="energy">
+          <div class="product-image"><img src="images/products/flax-porridge.jpg" alt="Льняной коллагеновый пептидный напиток" loading="lazy"><div class="product-badge">Питание</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Льняной коллагеновый пептидный напиток</h3>
+            <p class="product-desc">Вес, обмен, красота.</p>
+            <div class="product-meta"><span class="product-series">7 000 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('flax-porridge')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Льняной коллагеновый пептидный напиток')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="beauty">
+          <div class="product-image"><img src="images/products/isha-yan-mey.jpg" alt="Иша Ян Мэй" loading="lazy"><div class="product-badge">Красота</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Иша Ян Мэй</h3>
+            <p class="product-desc">Раствор для интимной гигиены.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('isha-yan-mey')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Иша Ян Мэй')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="beauty">
+          <div class="product-image"><img src="images/products/eye-solution.jpg" alt="Глазной бактериостатический раствор Sofora" loading="lazy"><div class="product-badge">Красота</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Глазной бактериостатический раствор Sofora</h3>
+            <p class="product-desc">Чудо-карандаш. 33 травы.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('eye-solution')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Глазной бактериостатический раствор Sofora')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="joints">
+          <div class="product-image"><img src="images/products/bone-collagen.jpg" alt="Костный коллаген «Шань Ли Нэн»" loading="lazy"><div class="product-badge">Суставы</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Костный коллаген «Шань Ли Нэн»</h3>
+            <p class="product-desc">Кости, суставы, связки.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('bone-collagen')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Костный коллаген «Шань Ли Нэн»')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="joints">
+          <div class="product-image"><img src="images/products/joint-collagen.jpg" alt="Суставной коллаген «Дэ Линэн»" loading="lazy"><div class="product-badge">Суставы</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Суставной коллаген «Дэ Линэн»</h3>
+            <p class="product-desc">Глюкозамин, хондроитин, коллаген.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('joint-collagen')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Суставной коллаген «Дэ Линэн»')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="heart">
+          <div class="product-image"><img src="images/products/xue-lan-duo-tabs.jpg" alt="Кровочистка Сюэ Лань До" loading="lazy"><div class="product-badge">Сердце</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Кровочистка Сюэ Лань До</h3>
+            <p class="product-desc">Натто и шелковица.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('xue-lan-duo-tabs')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Кровочистка Сюэ Лань До')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="diagnostics">
+          <div class="product-image"><img src="images/products/ai-diagnostic.jpg" alt="AI Small Quality" loading="lazy"><div class="product-badge">Диагностика AI</div></div>
+          <div class="product-info">
+            <h3 class="product-title">AI Small Quality</h3>
+            <p class="product-desc">Приложение с ИИ. Диагностика.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('ai-diagnostic')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('AI Small Quality')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="beauty">
+          <div class="product-image"><img src="images/products/aura-spray.jpg" alt="Aura Curu — спрей" loading="lazy"><div class="product-badge">Красота</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Aura Curu — спрей</h3>
+            <p class="product-desc">Моделирующий спрей.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('aura-spray')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Aura Curu — спрей')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="beauty">
+          <div class="product-image"><img src="images/products/sunscreen-stqanon.jpg" alt="St·QANON SPF50+ PA++++" loading="lazy"><div class="product-badge">Красота</div></div>
+          <div class="product-info">
+            <h3 class="product-title">St·QANON SPF50+ PA++++</h3>
+            <p class="product-desc">Солнцезащитный крем.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('sunscreen-stqanon')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('St·QANON SPF50+ PA++++')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="beauty">
+          <div class="product-image"><img src="images/products/snow-orchid-set.jpg" alt="Набор «Снежная орхидея» — 6 предметов" loading="lazy"><div class="product-badge">Красота</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Набор «Снежная орхидея» — 6 предметов</h3>
+            <p class="product-desc">Полный уход на основе красного риса.</p>
+            <div class="product-meta"><span class="product-series">33 000 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('snow-orchid-set')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Набор «Снежная орхидея» — 6 предметов')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="beauty">
+          <div class="product-image"><img src="images/products/snow-orchid-cream.jpg" alt="Антивозрастной спрей Снежная Орхидея" loading="lazy"><div class="product-badge">Красота</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Антивозрастной спрей Снежная Орхидея</h3>
+            <p class="product-desc">Разглаживает морщины.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('snow-orchid-cream')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Антивозрастной спрей Снежная Орхидея')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="energy">
+          <div class="product-image"><img src="images/products/ginseng-dendrobium.jpg" alt="Порошок женьшеня и дендробиума" loading="lazy"><div class="product-badge">Энергия</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Порошок женьшеня и дендробиума</h3>
+            <p class="product-desc">Селезёнка, инь.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('ginseng-dendrobium')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Порошок женьшеня и дендробиума')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="sleep">
+          <div class="product-image"><img src="images/products/jade-powder.jpg" alt="Порошок из черного нефрита" loading="lazy"><div class="product-badge">Релаксация</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Порошок из черного нефрита</h3>
+            <p class="product-desc">Согревает, снимает усталость.</p>
+            <div class="product-meta"><span class="product-series">11 100 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('jade-powder')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Порошок из черного нефрита')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="beauty">
+          <div class="product-image"><img src="images/products/all-skin.jpg" alt="Напиток для кожи All-Skin" loading="lazy"><div class="product-badge">Красота</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Напиток для кожи All-Skin</h3>
+            <p class="product-desc">Структура кожи, коллаген.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('all-skin')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Напиток для кожи All-Skin')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="immunity">
+          <div class="product-image"><img src="images/products/homological-youth.jpg" alt="Микрогранулы гомологичного омоложения" loading="lazy"><div class="product-badge">Иммунитет</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Микрогранулы гомологичного омоложения</h3>
+            <p class="product-desc">Пре- и пробиотики.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('homological-youth')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Микрогранулы гомологичного омоложения')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="heart">
+          <div class="product-image"><img src="images/products/oolong-cassia.jpg" alt="Чай улун с семенами кассии" loading="lazy"><div class="product-badge">Сердце</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Чай улун с семенами кассии</h3>
+            <p class="product-desc">Ускоряет обмен, выводит холестерин.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('oolong-cassia')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Чай улун с семенами кассии')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="beauty">
+          <div class="product-image"><img src="images/products/isha-lacto.jpg" alt="Комплекс «Иша Ян Мэй» с лактобактериями" loading="lazy"><div class="product-badge">Красота</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Комплекс «Иша Ян Мэй» с лактобактериями</h3>
+            <p class="product-desc">Фитокапсулы с лактобактериями.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('isha-lacto')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Комплекс «Иша Ян Мэй» с лактобактериями')">Заказать</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="beauty">
+          <div class="product-image"><img src="images/products/bamboo-cream.jpg" alt="Крем-смесь с бамбуком «Ши Ху»" loading="lazy"><div class="product-badge">Красота</div></div>
+          <div class="product-info">
+            <h3 class="product-title">Крем-смесь с бамбуком «Ши Ху»</h3>
+            <p class="product-desc">Питательный крем с бамбуком.</p>
+            <div class="product-meta"><span class="product-series">5 400 ₽</span></div>
+            <div class="product-actions">
+              <button type="button" class="btn btn-sm btn-outline-green" onclick="openProductModal('bamboo-cream')">Подробнее</button>
+              <button type="button" class="btn btn-sm" onclick="openOrderModal('Крем-смесь с бамбуком «Ши Ху»')">Заказать</button>
+            </div>
+          </div>
+        </article></div></div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo"><span class="logo-icon">金木</span><span class="logo-text">JIMON GROUP</span></div>
+          <p>Традиционная китайская медицина и продукты большого здоровья с 1993 года.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Навигация</h4>
+          <a href="index.html">Главная</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="advantages.html">Комплексы</a>
+          <a href="about.html">О компании</a>
+          <a href="contact.html">Контакты</a>
+        </div>
+        <div class="footer-links">
+          <h4>Каталог</h4>
+          <a href="catalog.html">Суставы и кости</a>
+          <a href="catalog.html">Печень и детокс</a>
+          <a href="catalog.html">Сердце и сосуды</a>
+          <a href="catalog.html">Красота</a>
+          <a href="catalog.html">Иммунитет</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 JIMON GROUP · 金木集团. Все права защищены.</p>
+        <p style="margin-top:8px;font-size:0.8rem;opacity:0.7">Не является лекарственным средством.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="product-modal" id="productModal" aria-hidden="true">
+    <div class="product-modal__backdrop" onclick="closeProductModal()"></div>
+    <div class="product-modal__box">
+      <button class="product-modal__close" onclick="closeProductModal()">✕</button>
+      <div class="product-modal__grid">
+        <div class="product-modal__img" id="pmImg"></div>
+        <div class="product-modal__info">
+          <span class="product-modal__cat" id="pmCat"></span>
+          <h2 id="pmTitle"></h2>
+          <p class="product-modal__desc" id="pmDesc"></p>
+          <div class="product-modal__price" id="pmPrice"></div>
+          <div class="product-modal__actions">
+            <button type="button" class="btn btn-primary" id="pmOrderBtn">Заказать</button>
+            <button type="button" class="btn btn-outline-green" onclick="closeProductModal()">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="order-modal" id="orderModal" aria-hidden="true">
+    <div class="order-modal__backdrop" onclick="closeOrderModal()"></div>
+    <div class="order-modal__box">
+      <button class="order-modal__close" onclick="closeOrderModal()" aria-label="Закрыть">✕</button>
+      <div class="order-modal__icon">🌿</div>
+      <h3>Оформить заказ</h3>
+      <div class="order-modal__label" id="orderProductLabel"></div>
+      <p class="order-modal__hint">Выберите удобный способ связи — менеджер ответит в течение 15 минут и поможет с оформлением.</p>
+      <div class="order-modal__list">
+        <a href="https://t.me/+lIERYWNvJ9JjNWFi" target="_blank" rel="noopener" class="order-opt">
+          <span class="ic">✈️</span><span class="name">Telegram</span><span class="arrow">→</span>
+        </a>
+        <a href="https://wa.me/79513508528" target="_blank" rel="noopener" class="order-opt">
+          <span class="ic">💬</span><span class="name">WhatsApp</span><span class="arrow">→</span>
+        </a>
+        <a href="https://vk.com/" target="_blank" rel="noopener" class="order-opt">
+          <span class="ic">🔵</span><span class="name">ВКонтакте</span><span class="arrow">→</span>
+        </a>
+      </div>
+      <p class="order-modal__footer">Работаем ежедневно с 10:00 до 22:00 (МСК)</p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

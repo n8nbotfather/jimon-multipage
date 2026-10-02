@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JIMON GROUP — Здоровье. Гармония. Жизненная сила</title>
+  <meta name="description" content="JIMON GROUP">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="river-flow" aria-hidden="true"><div class="river-track"></div></div>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">金木</span>
+        <span class="logo-text">JIMON GROUP</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="advantages.html">Комплексы</a></li>
+        <li><a href="about.html">О компании</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+        <li><a href="#" class="btn-nav" onclick="openOrderModal();return false;">Заказать</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <header class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">金木集团 · JIMON GROUP · с 1993 года</div>
+      <h1 class="hero-title"><span class="line">Здоровье, гармония</span><span class="line accent">и жизненная сила</span></h1>
+      <p class="hero-subtitle">JIMON GROUP — фармацевтическая корпорация из Китая. Объединяем мудрость традиционной китайской медицины с современными биотехнологиями.</p>
+      <div class="hero-cta">
+        <a href="catalog.html" class="btn btn-primary">Смотреть каталог →</a>
+        <a href="#" class="btn btn-outline" onclick="openOrderModal();return false;">Заказать</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-count="33">0</span><span class="stat-label">лет бренду</span></div>
+        <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label">+ стран экспорта</span></div>
+        <div class="stat"><span class="stat-num" data-count="2000">0</span><span class="stat-label">сотрудников</span></div>
+        <div class="stat"><span class="stat-num" data-count="300">0</span><span class="stat-label">+ продуктов</span></div>
+      </div>
+    </div>
+    <div class="scroll-indicator"><span>Листайте вниз</span><div class="mouse"></div></div>
+  </header>
+  <section class="about">
+    <div class="container">
+      <div class="section-header"><span class="section-tag">Каталог</span><h2 class="section-title">Направления заботы о здоровье</h2></div>
+      <div class="about-grid">
+        <a href="catalog.html" class="about-card" style="text-decoration:none;color:inherit"><div class="about-icon">🦴</div><h3>Суставы и кости</h3><p>Коллаген, хондропротекторы</p></a>
+        <a href="catalog.html" class="about-card" style="text-decoration:none;color:inherit"><div class="about-icon">🌿</div><h3>Печень и детокс</h3><p>Пептиды, куркума, комплексы</p></a>
+        <a href="catalog.html" class="about-card" style="text-decoration:none;color:inherit"><div class="about-icon">❤️</div><h3>Сердце и сосуды</h3><p>Натто, шелковица</p></a>
+        <a href="catalog.html" class="about-card" style="text-decoration:none;color:inherit"><div class="about-icon">✨</div><h3>Красота</h3><p>Пептиды, спреи, уход</p></a>
+        <a href="catalog.html" class="about-card" style="text-decoration:none;color:inherit"><div class="about-icon">🛡️</div><h3>Иммунитет</h3><p>Цикорий, пробиотики</p></a>
+        <a href="catalog.html" class="about-card" style="text-decoration:none;color:inherit"><div class="about-icon">⚡</div><h3>Энергия и питание</h3><p>Женьшень, каши, тонус</p></a>
+      </div>
+      <div style="text-align:center;margin-top:40px"><a href="catalog.html" class="btn btn-primary">Весь каталог →</a></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo"><span class="logo-icon">金木</span><span class="logo-text">JIMON GROUP</span></div>
+          <p>Традиционная китайская медицина и продукты большого здоровья с 1993 года.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Навигация</h4>
+          <a href="index.html">Главная</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="advantages.html">Комплексы</a>
+          <a href="about.html">О компании</a>
+          <a href="contact.html">Контакты</a>
+        </div>
+        <div class="footer-links">
+          <h4>Каталог</h4>
+          <a href="catalog.html">Суставы и кости</a>
+          <a href="catalog.html">Печень и детокс</a>
+          <a href="catalog.html">Сердце и сосуды</a>
+          <a href="catalog.html">Красота</a>
+          <a href="catalog.html">Иммунитет</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 JIMON GROUP · 金木集团. Все права защищены.</p>
+        <p style="margin-top:8px;font-size:0.8rem;opacity:0.7">Не является лекарственным средством.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="product-modal" id="productModal" aria-hidden="true">
+    <div class="product-modal__backdrop" onclick="closeProductModal()"></div>
+    <div class="product-modal__box">
+      <button class="product-modal__close" onclick="closeProductModal()">✕</button>
+      <div class="product-modal__grid">
+        <div class="product-modal__img" id="pmImg"></div>
+        <div class="product-modal__info">
+          <span class="product-modal__cat" id="pmCat"></span>
+          <h2 id="pmTitle"></h2>
+          <p class="product-modal__desc" id="pmDesc"></p>
+          <div class="product-modal__price" id="pmPrice"></div>
+          <div class="product-modal__actions">
+            <button type="button" class="btn btn-primary" id="pmOrderBtn">Заказать</button>
+            <button type="button" class="btn btn-outline-green" onclick="closeProductModal()">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="order-modal" id="orderModal" aria-hidden="true">
+    <div class="order-modal__backdrop" onclick="closeOrderModal()"></div>
+    <div class="order-modal__box">
+      <button class="order-modal__close" onclick="closeOrderModal()" aria-label="Закрыть">✕</button>
+      <div class="order-modal__icon">🌿</div>
+      <h3>Оформить заказ</h3>
+      <div class="order-modal__label" id="orderProductLabel"></div>
+      <p class="order-modal__hint">Выберите удобный способ связи — менеджер ответит в течение 15 минут и поможет с оформлением.</p>
+      <div class="order-modal__list">
+        <a href="https://t.me/+lIERYWNvJ9JjNWFi" target="_blank" rel="noopener" class="order-opt">
+          <span class="ic">✈️</span><span class="name">Telegram</span><span class="arrow">→</span>
+        </a>
+        <a href="https://wa.me/79513508528" target="_blank" rel="noopener" class="order-opt">
+          <span class="ic">💬</span><span class="name">WhatsApp</span><span class="arrow">→</span>
+        </a>
+        <a href="https://vk.com/" target="_blank" rel="noopener" class="order-opt">
+          <span class="ic">🔵</span><span class="name">ВКонтакте</span><span class="arrow">→</span>
+        </a>
+      </div>
+      <p class="order-modal__footer">Работаем ежедневно с 10:00 до 22:00 (МСК)</p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
